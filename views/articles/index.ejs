@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-header">
+        <h1 class="title">Bolg Articles</h1>
+        <a href="/articles/newArticle" class="btn btn-success">New Articles</a>
+      </div>
+      <% articles.forEach((article) => { %>
+      <div class="content-articles">
+        <h2 class="card"><%= article.title %></h2>
+        <p><%= article.createDate.toLocaleDateString() %></p>
+        <p><%= article.description %></p>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>

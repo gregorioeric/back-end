@@ -9,3 +9,104 @@
 * {
   font-family: cursive;
 }
+
+:root {
+  --color-gray: rgb(73, 73, 73);
+  --color-green: rgb(9, 133, 11);
+  --color-blue: rgb(15, 106, 155);
+  --color-red: rgb(202, 99, 99);
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-light-gray: rgb(176, 176, 176);
+  --color-light-green: rgb(174, 233, 174);
+  --color-light-blue: rgb(150, 200, 234);
+  --color-light-red: rgb(217, 175, 175);
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-articles,
+.content-header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-header {
+  padding: 1rem;
+}
+
+.content-articles {
+  padding: 1rem;
+  border: 0.2rem solid var(--color-gray);
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.content-articles h2 {
+  padding: 0 0 1rem 0;
+}
+
+/* form */
+
+.content-new-article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group .input input,
+.form-group .textarea textarea {
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form-group .field-title label,
+.form-group .field-title input,
+.form-group .field-description label,
+.form-group .field-description textarea,
+.form-group .field-markdown label,
+.form-group .field-markdown textarea {
+  width: 100%;
+  display: flex;
+}
+
+/* buttons */
+
+.btn-group {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: right;
+  gap: 1rem;
+}
+
+.btn-group .btn button,
+.btn-group .btn a {
+  display: flex;
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid var(--color-black);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 350ms ease-in-out, color 350ms ease-in-out;
+}
+
+.btn-group .btn-save button {
+  background: var(--color-light-green);
+}
+
+.btn-group .btn-cancel a {
+  background: var(--color-light-red);
+}
+
+.btn-group .btn-save button:hover {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.btn-group .btn-cancel a:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}

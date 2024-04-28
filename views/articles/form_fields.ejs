@@ -1,0 +1,43 @@
+<div class="content-new-article">
+  <h1>New Article!</h1>
+  <form action="/articles" method="post">
+    <div class="form-group">
+      <div class="input field-title" id="field-title">
+        <label for="input-title">Title</label>
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          class="input-title"
+          id="input-title"
+        />
+      </div>
+      <div class="textarea field-description" id="field-description">
+        <label for="input-description">Description</label>
+        <textarea
+          name="description"
+          placeholder="Description"
+          class="input-description"
+          id="input-description"
+        ></textarea>
+      </div>
+      <div class="textarea field-markdown" id="field-markdown">
+        <label for="input-markdown">Markdown</label>
+        <textarea
+          name="markdown"
+          placeholder="Markdown"
+          class="input-markdown"
+          id="input-markdown"
+        ></textarea>
+      </div>
+    </div>
+    <div class="btn-group">
+      <div class="btn btn-save">
+        <button id="btn-save">Cadastrar</button>
+      </div>
+      <div class="btn btn-cancel">
+        <a href="/" id="btn-cancel">Cancelar</a>
+      </div>
+    </div>
+  </form>
+</div>
